@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Assistant", sans-serif;
+}
+
+.home-page nav {
+  position: relative;
+  z-index: 1;
+}
+.home-page nav .navbar-brand {
+  font-family: "Viga", sans-serif;
+  font-size: 24px;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.home-page nav .navbar-nav .active {
+  font-weight: bold;
+}
+.home-page .jumbotron {
+  background-image: url("../images/example.jpg");
+  background-size: cover;
+  margin-top: -75px;
+  height: 450px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.home-page .jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+}
+.home-page .jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+.home-page .jumbotron form input {
+  width: 350px !important;
+}
+.home-page .jumbotron .display-4 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 60px;
+}
+.home-page .jumbotron .lead {
+  color: white;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 300;
+}
+.home-page .populer {
+  margin-top: 80px;
+}
+.home-page .populer h2 {
+  font-family: "Lobster", serif;
+}
+.home-page .populer .row {
+  margin-top: 50px;
+}
+.home-page .populer .row .card {
+  height: 380px;
+  background-color: #DDD;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.home-page .populer .row .card:hover {
+  box-shadow: 0 10px 20px #2e2e2e;
+}
+.home-page .populer .row .card .travel-location {
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #000000;
+  color: #e6e6e6;
+}
+.home-page .populer .row .card .travel-name {
+  margin-top: -20px !important;
+  font-size: 26px;
+  text-shadow: 0px 0px 5px #000000;
+}
+.home-page .populer .travel-button .btn-travel-details {
+  background-color: #FF9E53;
+  color: #fff;
+}
+.home-page .populer .travel-button .btn-travel-details:hover {
+  background-color: #FFAE6F;
+  color: #fff;
+}
+
+.h-scale {
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+}
+.h-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}/*# sourceMappingURL=main.css.map */
