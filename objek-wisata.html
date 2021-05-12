@@ -22,31 +22,179 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="nav-home navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand ml-5" href="#">Explore Likupang</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <a class="navbar-brand ml-5" href="index.html">Explore Likupang</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-link mr-3 active" href="#">Beranda</a>
-        <a class="nav-link mr-3" href="#">Objek Wisata</a>
+        <a class="nav-link mr-3" href="index.html">Beranda</a>
+        <a class="nav-link mr-3 active" href="objek-wisata.html">Objek Wisata</a>
         <div class="dropdown">
           <a class="nav-link mr-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Informasi Kecamatan
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Keadaan Geografis</a>
-            <a class="dropdown-item" href="#">Demografi</a>
-            <a class="dropdown-item" href="#">Struktur Pemerintahan</a>
+            <a class="dropdown-item" href="keadaan-geografis.html">Keadaan Geografis</a>
+            <a class="dropdown-item" href="demografi.html">Demografi</a>
+            <a class="dropdown-item" href="struktur-pemerintahan">Struktur Pemerintahan</a>
           </div>
         </div>
-        <a class="nav-link mr-5 btn btn-primary px-3" href="#">MASUK</a>
+        <a class="nav-link mr-5 btn btn-primary text-white px-3" href="login.html">MASUK</a>
       </div>
     </div>
   </nav>
   <!-- End of navbar -->
 
+  <!-- Breadcrumb -->
+  <section class="section-breadcrumb">
+    <div class="container pt-4">
+      <div class="row animate__animated animate__fadeInDown">
+        <div class="col">
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Objek Wisata</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of breadcrumb -->
+
+  <main class="animate__animated animate__zoomIn">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/pantai-paal-1.JPG">
+                </a>
+                <div class="d-inline">
+                  <h2>Pantai Paal</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Marinsow</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/pantai-pulisan-1.JPG">
+                </a>
+                <div class="d-inline">
+                  <h2>Pantai Pulisan</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Pulisan</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/bukit-larata-1.JPG">
+                </a>
+                <div class="d-inline">
+                  <h2>Bukit Larata</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Kinunang</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/pantai-kalinaun-1.jpeg">
+                </a>
+                <div class="d-inline">
+                  <h2>Pantai Kalinaun</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Kalinaun</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/pantai-kinunang-1.JPG">
+                </a>
+                <div class="d-inline">
+                  <h2>Pantai Kinunang</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Kinunang</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/pantai-surabaya-1.JPG">
+                </a>
+                <div class="d-inline">
+                  <h2>Pantai Surabaya</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Wineru</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card list-wisata mt-2">
+            <div class="card-body shadow">
+              <div class="row">
+                <a href="detail.html">
+                  <img class="rounded" src="frontend/images/puncak-pulisan-1.JPG">
+                </a>
+                <div class="d-inline">
+                  <h2>Puncak Pulisan</h2>
+                  <div class="text-center-sm">
+                    <p class="alamat"><i class="fas fa-map-marker-alt fa-sm text-danger"></i> Desa Pulisan</p>
+                  </div>
+                  <a href="detail.html" class="btn btn-detail">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
  
   <!-- Footer -->
   <footer class="sticky-footer bg-white mt-5 pb-3">

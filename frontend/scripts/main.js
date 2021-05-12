@@ -8,7 +8,7 @@ $(document).ready( function () {
     zoomwidth: 500,
     title: false,
     tint: '#333',
-    xoffest: 15,
+    defaultScale : .7
   });
 
 } );

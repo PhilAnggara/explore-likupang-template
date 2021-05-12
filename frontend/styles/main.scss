@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 * {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
-
-// *********
+// ******************
 // Home-page
-// *********
+// ------------------
 .home-page {
   // Navbar
   nav {
     position: relative;
     z-index: 1;
     .navbar-brand {
-      font-family: 'Viga', sans-serif;
+      font-family: "Kaushan Script", cursive;
       font-size: 24px;
       color: #ffffff !important;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
@@ -33,19 +34,20 @@
 
   // Jumbotron
   .jumbotron {
-    background-image: url("../images/example.jpg");
+    background-image: url("../images/header.jpg");
     background-size: cover;
+    background-position: center;
     margin-top: -75px;
     height: 450px;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     position: relative;
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 50%;
-      background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0));
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
       position: absolute;
       top: 0;
     }
@@ -59,7 +61,7 @@
       }
     }
     .display-4 {
-      font-family: 'Dancing Script', cursive;
+      font-family: "Dancing Script", cursive;
       color: white;
       font-weight: 700;
       margin-top: 30px;
@@ -78,23 +80,24 @@
   .populer {
     margin-top: 80px;
     h2 {
-      font-family: 'Lobster', serif;
+      font-family: "Lobster", serif;
     }
     .row {
       margin-top: 50px;
       .card {
         height: 380px;
-        background-color: #DDD;
+        background-color: #ddd;
         color: #fff;
         padding: 30px;
         background-size: cover;
         margin-bottom: 20px;
+        box-shadow: 0 5px 10px #2e2e2e;
         &:hover {
           box-shadow: 0 10px 20px #2e2e2e;
         }
         .travel-location {
           font-weight: bold;
-          text-shadow: 0px 0px 5px #000000;
+          text-shadow: 0px 0px 3px #000000;
           color: #e6e6e6;
         }
         .travel-name {
@@ -106,10 +109,10 @@
     }
     .travel-button {
       .btn-travel-details {
-        background-color: #FF9E53;
+        background-color: #ff9e53;
         color: #fff;
         &:hover {
-          background-color: #FFAE6F;
+          background-color: #ffae6f;
           color: #fff;
         }
       }
@@ -117,16 +120,123 @@
   }
   // End of populer
 }
-// ******************
+// ------------------
 // * End of home-page
+// ******************
+
+// ******************
+// Main
+// ------------------
+// Navbar
+nav {
+  position: relative;
+  z-index: 1;
+  .navbar-brand {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .navbar-nav {
+    .active {
+      font-weight: bold;
+    }
+  }
+}
+// End of navbar
+
+// Breadcrumb
+.section-breadcrumb {
+  height: 180px;
+  background-color: #e8ecef;
+}
+// End of breadcrumb
+
+main {
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1px;
+  }
+  .nama-desa {
+    font-size: 18px;
+  }
+  .saran {
+    font-size: 14px;
+    color: #5f5f5f;
+  }
+  margin-top: -100px;
+  min-height: 63vh;
+  .list-wisata {
+    height: 150px;
+    .card-body {
+      padding: 15px 30px;
+      img {
+        object-fit: cover;
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+      }
+      .btn-detail {
+        background-color: #ff9e53;
+        color: #fff;
+        &:hover {
+          background-color: #ffae6f;
+          color: #fff;
+        }
+      }
+    }
+  }
+  // Gallery
+  .gallery {
+    .xzoom-container {
+      display: block;
+      .xzoom {
+        width: 100%;
+        margin-bottom: 10px;
+        box-shadow: none;
+      }
+      .xactive {
+        border: 4px solid #1abc9c;
+        box-shadow: none;
+      }
+    }
+    .xzoom-thumbs {
+      width: 100%;
+      .xzoom-gallery {
+        width: 23%;
+      }
+    }
+  }
+  // End of gallery
+  .lokasi {
+    .card {
+      position: sticky;
+      top: 20px;
+    }
+  }
+}
+
+// ------------------
+// * End of main
 // ******************
 
 // Animation
 .h-scale {
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  &:hover{
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  &:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
   }
 }
 // End of animation
