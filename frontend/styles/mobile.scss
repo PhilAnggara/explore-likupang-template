@@ -8,9 +8,6 @@
       .nav-link {
         color: #000000 !important;
       }
-      .dropdown-menu {
-        margin-bottom: 10px;
-      }
       .btn {
         color: #ffffff !important;
       }
@@ -36,6 +33,7 @@
       }
       .row {
         .card {
+          padding: 20px 0;
           height: 200px;
           .travel-location {
             font-size: 10px;
@@ -45,11 +43,96 @@
           }
           a {
             font-size: 14px;
-            padding: 5px 8px !important;
+            padding: 5px 20px !important;
           }
         }
       }
     }
   }
+
+  .breadcrumb-item {
+    font-size: 12px;
+  }
+
+  // Main
+  main {
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 1px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    .list-wisata {
+      height: 130px;
+      .card-body {
+        height: 120px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        .alamat {
+          font-size: 14px;
+        }
+      }
+    }
+    // Detail
+    .card-body {
+      padding: 10px;
+      .nama-desa {
+        font-size: 14px;
+      }
+      .alert-info {
+        font-size: 12px;
+      }
+      .rounded-circle {
+        width: 50px;
+      }
+      // Gallery
+      .gallery {
+        .xzoom-container {
+          .xzoom {
+            width: 100%;
+            margin-bottom: 10px;
+            box-shadow: none;
+          }
+          .xactive {
+            border: 4px solid #1abc9c;
+            box-shadow: none;
+          }
+        }
+        .xzoom-thumbs {
+          .xzoom-gallery {
+            width: 22%;
+          }
+        }
+      }
+      // End of gallery
+      .lokasi {
+        .card {
+          position: sticky;
+          top: 20px;
+        }
+      }
+      .struktur-lg {
+        display: none;
+      }
+      .struktur-sm {
+        display: block;
+      }
+    }
+    // End of detail
+  }
+  // End of main
   
 }
