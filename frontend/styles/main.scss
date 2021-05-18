@@ -17,10 +17,10 @@
   // Navbar
   nav {
     position: relative;
-    z-index: 1;
+    z-index: 10;
     .navbar-brand {
       font-family: "Kaushan Script", cursive;
-      font-size: 24px;
+      font-size: 30px;
       color: #ffffff !important;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     }
@@ -64,7 +64,7 @@
       font-family: "Dancing Script", cursive;
       color: white;
       font-weight: 700;
-      margin-top: 30px;
+      margin-top: 50px;
       font-size: 60px;
     }
     .lead {
@@ -133,7 +133,7 @@ nav {
   z-index: 1;
   .navbar-brand {
     font-family: "Kaushan Script", cursive;
-    font-size: 24px;
+    font-size: 30px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   }
   .navbar-nav {
@@ -147,7 +147,12 @@ nav {
 // Breadcrumb
 .section-breadcrumb {
   height: 180px;
-  background-color: #e8ecef;
+  // background-color: #d6ebff;
+  background: url('../images/puncak-pulisan-1.JPG');
+  background-position: center;
+  // .breadcrumb {
+  //   background-color: #d6ebff;
+  // }
 }
 // End of breadcrumb
 
@@ -173,7 +178,7 @@ main {
     font-size: 14px;
     color: #5f5f5f;
   }.struktur-lg {
-    display: block;
+    display: inline;
   }
   .struktur-sm {
     display: none;
@@ -190,9 +195,20 @@ main {
         height: 120px;
         margin-right: 20px;
       }
+      .alamat {
+        font-weight: 600;
+        color: #495057;
+        margin: 0 0;
+      }
+      .jarak {
+        font-size: 14px;
+        color: #495057;
+        margin: 0 0;
+      }
       .btn-detail {
         background-color: #ff9e53;
         color: #fff;
+        margin-top: 5px;
         &:hover {
           background-color: #ffae6f;
           color: #fff;
@@ -379,3 +395,7 @@ main {
 
 }
 // End of login
+
+@media (max-width: 992px) {
+  @import "mobile.scss";  
+}
