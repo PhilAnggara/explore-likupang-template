@@ -151,9 +151,11 @@ main .saran {
   color: #5f5f5f;
 }
 main .struktur-lg {
+  width: 100%;
   display: inline;
 }
 main .struktur-sm {
+  width: 100%;
   display: none;
 }
 main .list-wisata {
@@ -386,7 +388,7 @@ main .lokasi .card {
   }
 
   main {
-    min-height: 69vh;
+    min-height: 72vh;
   }
   main h1 {
     font-size: 22px;
